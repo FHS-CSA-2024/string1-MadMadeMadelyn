@@ -39,7 +39,6 @@ public class String1
      *  helloName("X") â†’ "Hello X!"
      */
     public String helloName(String name) {
-        //return unimplemented;
         return "Hello " + name + "!";
     }
 
@@ -51,7 +50,6 @@ public class String1
      * makeAbba("What", "Up") â†’ "WhatUpUpWhat"
      */
     public String makeAbba(String a, String b) {
-        //return unimplemented;
         return a + b + b + a;
     }
 
@@ -64,7 +62,6 @@ public class String1
      * makeTags("cite", "Yay") â†’ "<cite>Yay</cite>"
      */
     public String makeTags(String tag, String word) {
-        //return unimplemented;
         return "<" + tag + ">" + word + "</" + tag + ">";
     }
 
@@ -79,7 +76,6 @@ public class String1
      * makeOutWord("[[]]", "word") â†’ "[[word]]"
      */
     public String makeOutWord(String out, String word) {
-        //return unimplemented;
         return out.substring(0,2) + word + out.substring(2);
     }
 
@@ -91,7 +87,6 @@ public class String1
      * extraEnd("Hi") â†’ "HiHiHi"
      */
     public String extraEnd(String str) {
-        //return unimplemented;
         return str.substring(3) + str.substring(3) + str.substring(3);
     }
 
@@ -105,7 +100,6 @@ public class String1
      * firstTwo("ab") â†’ "ab"
      */
     public String firstTwo(String str) {
-        //return unimplemented;
         return str.substring(0,2);
     }
 
@@ -116,7 +110,6 @@ public class String1
      * firstHalf("abcdef") â†’ "abc"
      */
     public String firstHalf(String str) {
-        //return unimplemented;
         int strHalf = str.length()/2;
         return str.substring(0,strHalf);
     }
@@ -129,7 +122,6 @@ public class String1
      * withoutEnd("coding") â†’ "odin"
      */
     public String withoutEnd(String str) {
-        //return unimplemented;
         int strEnd = str.length()-1;
         return str.substring(1,strEnd);
     }
@@ -143,7 +135,6 @@ public class String1
      * comboString("aaa", "b") â†’ "baaab"
      */
     public String comboString(String a, String b) {
-        //return unimplemented;
         int aStringLength = a.length();
         int bStringLength = b.length();
         if (aStringLength < bStringLength){
@@ -162,7 +153,6 @@ public class String1
      * middleThree("solving") â†’ "lvi"
      */
     public String middleThree(String str) {
-        //return unimplemented;
         int strMid = str.length()/2;
         return str.substring(strMid - 1,strMid + 2);
     }
@@ -175,7 +165,6 @@ public class String1
      * extraFront("H") â†’ "HHH"
      */
     public String extraFront(String str) {
-        //return unimplemented;
         int strFront = str.length();
         if (str.length()>=2){
             return str.substring(0,2) + str.substring(0,2) + str.substring(0,2);
@@ -193,7 +182,6 @@ public class String1
      * left2("Hi") â†’ "Hi"
      */
     public String left2(String str) {
-        //return unimplemented;
         return str.substring(2)+str.substring(0,2);
     }
 
@@ -206,7 +194,6 @@ public class String1
      * hasBad("xxbadxx") â†’ false
      */
     public boolean hasBad(String str) {
-        //return false;
         if (str.length() == 3 && str.equals("bad")){
             return true;
         }
@@ -227,7 +214,6 @@ public class String1
      * conCat("abc", "") â†’ "abc"
      */
     public String conCat(String a, String b) {
-        //return unimplemented;
         if(a.isEmpty() || b.isEmpty()){
             return a +b;
         }
@@ -248,7 +234,6 @@ public class String1
      *minCat("java", "Hello") â†’ "javaello"
      */
     public String minCat(String a, String b) {
-        //return unimplemented;
         if(a.length() > b.length()){
             return a.substring(a.length() - b.length(), a.length()) + b;
         } else if (a.length() < b.length()){
@@ -267,7 +252,6 @@ public class String1
      * withoutX("Hxix") â†’ "Hxi"
      */
     public String withoutX(String str) {
-        //return unimplemented;
         if(str.isEmpty()||(str.length() == 1 && str.substring(0,1).equals("x"))){
             return "";
         }
@@ -293,7 +277,6 @@ public class String1
      * deFront("away") â†’ "aay"
      */
     public String deFront(String str) {    
-        //return unimplemented;
         StringBuilder result = new StringBuilder(str.length());
         for (int i = 0; i < str.length(); ++i){
             char c = str.charAt(i);
